@@ -10,7 +10,9 @@ public class HomePage extends Base {
 
 
     @FindBy(xpath = "//span//a[text()='NEWS']")
-   public WebElement buttonNews;
+   public WebElement buttonNewsBare;
+    @FindBy(xpath = "//a[normalize-space()='Taliban vow retaliation as Pak airstrike kills 46']")
+    public WebElement text;
 
 
     public HomePage(){
@@ -19,7 +21,7 @@ public class HomePage extends Base {
 
 
     public void clickButtonNews(){
-        clickOnElement(buttonNews);
+        clickOnElement(buttonNewsBare);
     }
 
 
